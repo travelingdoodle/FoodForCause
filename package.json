@@ -1,0 +1,26 @@
+{
+  "name": "foodforcause",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/travelingdoodle/FoodForCause.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/travelingdoodle/FoodForCause/issues"
+  },
+  "homepage": "https://github.com/travelingdoodle/FoodForCause#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.1",
+    "mysql2": "^1.4.2",
+    "sequelize": "^4.13.5"
+  }
+}
