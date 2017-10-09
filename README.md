@@ -1,25 +1,26 @@
 # FoodForCause
 
 
-## __Requirements / Need to impliment__
+## __Requirements / Need to Implement__
 * Authentication
     * Incorporate Authentication (JSON Web Tokens, Sessions, Etc.)
         * ADMIN / Provider / Consumer
-    * __look at other projects for examples__
-* Deploy on Heroku (When we have a stable build)
+    * Let's use passport.js ... unless you two want to use firebase (aka trashbase)
+    * http://passportjs.org/
+    * They have oauth built in for facebook, twitter, etc.
 * Testing / Library
     * Using JEST (REG)
 * Frontend / UI (NOT REG)
 * __Use an existing public dataset to power the database__
-    * Ugh... IDK what to do about this one... maybe there is a way to get lists of grocery stores???
+    * __Ugh... IDK what to do about this one... maybe there is a way to get lists of grocery stores???__
 * __Update README__
-    * Project Explination
+    * Project Explanation
     * Problem / Target Consumer / Solution / How it works
+* __Final Steps__
+    * Deploy on Heroku (When we have a stable build)
 
 
-
-
-## Other Things to add:
+## Nice To Have:
 * https://www.twilio.com/
     * Send Texts for notifications about specific items
 * Tweets to notify of available items that will expire soon
@@ -27,7 +28,7 @@
 * Things and stuff
 
 
-# Draft of documentation
+# DRAFT DOCUMENTATION
 
 ## What does Food For Cause do for the community?
 
@@ -49,6 +50,13 @@
 * Grocery Stores, restaurants, and other businesses login and then post their available food items (including quantity, and expiration date).
 * Food banks, and kitchens may reserve and pick up items.
 * Unreserved items that are nearing expiration will be tweeted and text (SMS) to let the community know about their availability.
+
+### What powers FoodForCause?
+* Node/ Express
+* MySQL
+* Heroku
+* JEST Testing Suite
+* Passport.js User Authentication
 
 
 
