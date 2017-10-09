@@ -1,15 +1,31 @@
 # FoodForCause
 
+
+## __Requirements / Need to impliment__
+* Authentication
+    * Incorporate Authentication (JSON Web Tokens, Sessions, Etc.)
+        * ADMIN / Provider / Consumer
+    * __look at other projects for examples__
+* Deploy on Heroku (When we have a stable build)
+* Testing / Library
+    * Using JEST (REG)
+* Frontend / UI (NOT REG)
+* __Use an existing public dataset to power the database__
+    * Ugh... IDK what to do about this one... maybe there is a way to get lists of grocery stores???
+* __Update README__
+    * Project Explination
+    * Problem / Target Consumer / Solution / How it works
+
+
+
+
 ## Other Things to add:
 * https://www.twilio.com/
     * Send Texts for notifications about specific items
 * Tweets to notify of available items that will expire soon
-* Login
-    * ADMIN / Provider / Consumer
 * Connect on FB/ IG
-* Unit testing / JEST (Kills two birds... new testing suite and testing!)
 * Things and stuff
-* Create a README that Explains what this does
+
 
 # Draft of documentation
 
@@ -30,7 +46,7 @@
 * This will help to reduce food waste, put the food to good use, and strengthen the community.
 
 ### How Does it work?
-* Grocery Stores, restaurants, and other businesses post their available food items, quantity, and expiration dates.
+* Grocery Stores, restaurants, and other businesses login and then post their available food items (including quantity, and expiration date).
 * Food banks, and kitchens may reserve and pick up items.
 * Unreserved items that are nearing expiration will be tweeted and text (SMS) to let the community know about their availability.
 

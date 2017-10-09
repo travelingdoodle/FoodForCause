@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "node server.js"
   },
   "repository": {
@@ -22,5 +22,11 @@
     "express": "^4.16.1",
     "mysql2": "^1.4.2",
     "sequelize": "^4.13.5"
+  },
+  "devDependencies": {
+    "jest-cli": "^21.2.1"
+  },
+  "jest": {
+    "testEnvironment": "node"
   }
 }
