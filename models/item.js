@@ -8,6 +8,9 @@ var Item = sequelize.define("item", {
   category: {
     type: Sequelize.STRING
   },
+  quantity: {
+    type: Sequelize.STRING
+  },
   expiration: {
     type: Sequelize.STRING
   }

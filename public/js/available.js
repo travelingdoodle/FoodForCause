@@ -8,6 +8,7 @@ $.get("/api/all", function(data) {
 
       $("#item-well-" + i).append("<h2>" + (i + 1) + ". " + data[i].name + "</h2>");
       $("#item-well-" + i).append("<h3>Category: " + data[i].category + "</h4>");
+      $("#item-well-" + i).append("<h3>Quantity: " + data[i].quantity + "</h4>");
       $("#item-well-" + i).append("<h3>Expiration (Days): " + data[i].expiration + "</h4>");
         
       var reserveBtn = $("<button>");

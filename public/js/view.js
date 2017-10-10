@@ -22,6 +22,7 @@ function renderItem(data) {
 
       div.append("<h2>" + data[i].name + "</h2>");
       div.append("<p>Category: " + data[i].category + "</p>");
+      div.append("<p>Quantity: " + data[i].quantity + "</p>");
       div.append("<p>Expiration (Days): " + data[i].expiration + "</p>");
       div.append("<button class='delete' data-id='" + data[i].id + "'>DELETE ITEM</button>");
 
