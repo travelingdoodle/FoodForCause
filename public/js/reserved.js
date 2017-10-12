@@ -1,4 +1,4 @@
-$.get("/api/items/reserved", function(data) {
+$.get("/api/reserved", function(data) {
   for (var i = 0; i < data.length; i++) {
     // Create a parent div to hold item data
     var wellSection = $("<div>");

@@ -2,7 +2,11 @@ var Item = require("../models/item.js");
 
 module.exports = function(app) {
   app.get("/api/all", function(req, res) {
-    Item.findAll({}).then(function(results) {
+    Item.findAll({
+      where: {
+        reserved: false
+      }
+    }).then(function(results) {
       res.json(results);
     });
   });
@@ -18,41 +22,6 @@ module.exports = function(app) {
       });
     }
   });
-
-  // app.get("/api/category/:category", function(req, res) {
-  //   if (req.params.category) {
-  //     Item.findAll({
-  //       where: {
-  //         category: req.params.category
-  //       }
-  //     }).then(function(results) {
-  //       res.json(results);
-  //     });
-  //   }
-  // });
-  // app.get("/api/quantity/:quantity", function(req, res) {
-  //   if (req.params.quantity) {
-  //     Item.findAll({
-  //       where: {
-  //         quantity: req.params.quantity
-  //       }
-  //     }).then(function(results) {
-  //       res.json(results);
-  //     });
-  //   }
-  // });
-
-  // app.get("/api/expiration/:expiration", function(req, res) {
-  //   if (req.params.expiration) {
-  //     Item.findAll({
-  //       where: {
-  //         expiration: req.params.expiration
-  //       }
-  //     }).then(function(results) {
-  //       res.json(results);
-  //     });
-  //   }
-  // });
 
   app.post("/api/new", function(req, res) {
     console.log("Item:");
@@ -74,9 +43,8 @@ module.exports = function(app) {
       }
     });
   });
-// };
 
-  app.post("/api/items/reserved", function(req, res) {
+  app.post("/api/reserved", function(req, res) {
     console.log("Item:");
     console.log(req.body);
     Item.update({
@@ -88,18 +56,14 @@ module.exports = function(app) {
     });
   });
 
-  app.get("/api/items/reserved", function(req, res) {
-    if (req.params.name) {
+  app.get("/api/reserved", function(req, res) {
       Item.findAll({
-        reserved: true,
-      },{
         where: {
-          id: req.body.id
-        } 
+          reserved: true,
+        }
       }).then(function(results) {
         res.json(results);
       });
-    }
   });
 
 };

@@ -10,36 +10,24 @@ $.get("/api/all", function(data) {
       $("#item-well-" + i).append("<h3>Category: " + data[i].category + "</h4>");
       $("#item-well-" + i).append("<h3>Quantity: " + data[i].quantity + "</h4>");
       $("#item-well-" + i).append("<h3>Expiration (Days): " + data[i].expiration + "</h4>");
-      $("#item-well-" + i).append("<button class='delete btn btn-primary' data-id='" + data[i].id + "'>Reserve</button>");
-        
-      // var reserveBtn = $("<button>");
-      //   reserveBtn.text("Reserve");
-      //   reserveBtn.addClass("reserve btn btn-primary");
-      //   $("#item-well-" + i).append(reserveBtn);
-      //   reserveBtn.css({
-      //     "font-weight": "500"
-      //   });
-      }
+      $("#item-well-" + i).append("<button class='reserve btn btn-primary' data-id='" + data[i].id + "'>Reserve</button>");
+    }
 
       function renderItem(data) {
 
-        $(".delete").click(function() {
+        $(".reserve").click(function() {
           
           var info = {
             id: $(this).attr("data-id")
           };
     
-          $.post("/api/delete", info)
+          $.post("/api/reserved", info)
             .done(function(deldata) {
               console.log(deldata);
               console.log("Deleted Successfully!");
             });
-    
-          $(this).closest("div").remove();
-    
-        });
-    
+          $(this).closest("div").remove();   
+        });    
       }
-
       renderItem();
 });
