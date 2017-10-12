@@ -24,13 +24,13 @@ function renderItem(data) {
       div.append("<p>Category: " + data[i].category + "</p>");
       div.append("<p>Quantity: " + data[i].quantity + "</p>");
       div.append("<p>Expiration (Days): " + data[i].expiration + "</p>");
-      div.append("<button class='delete' data-id='" + data[i].id + "'>DELETE ITEM</button>");
+      div.append("<button class='reserve btn btn-primary' data-id='" + data[i].id + "'>Reserve</button>");
 
       $("#stats").append(div);
 
     }
 
-    $(".delete").click(function() {
+    $(".reserve").click(function() {
 
       var info = {
         id: $(this).attr("data-id")

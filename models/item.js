@@ -13,6 +13,10 @@ var Item = sequelize.define("item", {
   },
   expiration: {
     type: Sequelize.STRING
+  },
+  reserved: {
+    type: Sequelize.BOOLEAN,
+    defaultValue: false
   }
 }, {
   timestamps: false

@@ -18,4 +18,6 @@ $("#add-btn").on("click", function(event) {
   $("#category").val("");
   $("#quantity").val("");
   $("#expiration").val("");
+
+  alert("Item has been added, thanks for your donation!");
 });
