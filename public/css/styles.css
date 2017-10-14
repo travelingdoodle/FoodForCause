@@ -39,20 +39,18 @@ a:hover {
 h1,
 h2,
 h4,
+h3,
 h5,
 h6 {
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
-h3 {
-	color: rgba(255, 255, 255, 0.88);
-}
+
 
 p {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 20px;
-    
 }
 
 .bg-primary {
@@ -233,7 +231,8 @@ header.masthead .header-content .header-content-inner p {
     font-size: 16px;
     font-weight: 300;
     margin-bottom: 50px;
-    color: rgba(255, 255, 255, 0.88);;
+    color: rgba(255, 255, 255, 0.88);
+    ;
 }
 
 @media (min-width: 768px) {
@@ -507,8 +506,9 @@ fieldset[disabled] .btn-primary:hover {
     max-width: 200px;
     border-radius: 50%;
 }
-#searchForm {	
-	padding: 50px;
+
+#searchForm {
+    padding: 50px;
 }
 
 #search-btn {
@@ -517,5 +517,5 @@ fieldset[disabled] .btn-primary:hover {
 }
 
 #homeHeading {
-	font-family: 'Special Elite', cursive;
+    font-family: 'Special Elite', cursive;
 }
