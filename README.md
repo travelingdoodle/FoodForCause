@@ -3,16 +3,18 @@
 
 ## __Requirements / Need to Implement__
 * Authentication
-    * Incorporate Authentication (JSON Web Tokens, Sessions, Etc.)
-        * ADMIN / Provider / Consumer
-    * Let's use passport.js ... unless you two want to use firebase (aka trashbase)
-    * http://passportjs.org/
-    * They have oauth built in for facebook, twitter, etc.
+    * Incorporate Authentication 
 * Testing / Library
     * Using JEST (REG)
-* Frontend / UI (NOT REG)
-* __Use an existing public dataset to power the database__
-    * __Ugh... IDK what to do about this one... maybe there is a way to get lists of grocery stores???__
+## __ISSUES WITH DESIGN__
+* add.html
+    * top of page is cut off, can't see 'food for cause' title
+* available.html
+    * The papge starts further down than 'view.html' ... maybe an extra div?
+* Currently working on applying styling to login.html (default page for now)
+
+
+
 * __Update README__
     * Project Explanation
     * Problem / Target Consumer / Solution / How it works
