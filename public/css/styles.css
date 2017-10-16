@@ -516,6 +516,26 @@ fieldset[disabled] .btn-primary:hover {
     margin-top: 10px;
 }
 
+#table-header {
+    font-size: 20px; 
+    text-align: left;
+    border-bottom: 1px solid white; 
+}
+
+#table-content {
+    text-align: left; 
+
+}   
+
+#table-content tr {
+    border-bottom: 1px solid white;
+}
+
+#availTable {
+    margin-top: 50px;
+    background: rgba(0,0,0,0.35);
+}
+
 #homeHeading {
     font-family: 'Special Elite', cursive;
 }
