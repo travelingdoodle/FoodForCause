@@ -8,8 +8,15 @@ var Item = sequelize.define("item", {
   category: {
     type: Sequelize.STRING
   },
+  quantity: {
+    type: Sequelize.STRING
+  },
   expiration: {
     type: Sequelize.STRING
+  },
+  reserved: {
+    type: Sequelize.BOOLEAN,
+    defaultValue: false
   }
 }, {
   timestamps: false

@@ -1,4 +1,4 @@
-$.get("/api/items/reserved", function(data) {
+$.get("/api/reserved", function(data) {
   for (var i = 0; i < data.length; i++) {
     // Create a parent div to hold item data
     var wellSection = $("<div>");
@@ -8,6 +8,7 @@ $.get("/api/items/reserved", function(data) {
 
       $("#item-well-" + i).append("<h2>" + (i + 1) + ". " + data[i].name + "</h2>");
       $("#item-well-" + i).append("<h3>Category: " + data[i].category + "</h4>");
+      $("#item-well-" + i).append("<h3>Quantity: " + data[i].quantity + "</h4>");      
       $("#item-well-" + i).append("<h3>Expiration (Days): " + data[i].expiration + "</h4>");
   }
 });
