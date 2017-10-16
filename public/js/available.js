@@ -1,16 +1,17 @@
 $.get("/api/all", function(data) {
   for (var i = 0; i < data.length; i++) {
     // Create a parent div to hold item data
-    var wellSection = $("<div>");
-      wellSection.addClass("well");
-      wellSection.attr("id", "item-well-" + i);
-      $("#well-section").append(wellSection);
+    var tableSelection = $("<tr>");
+      // tableSelection.addClass("well");
+      tableSelection.attr("id", "item-table-" + i);
+      $("#table-content").append(tableSelection);
 
-      $("#item-well-" + i).append("<h2>" + (i + 1) + ". " + data[i].name + "</h2>");
-      $("#item-well-" + i).append("<h3>Category: " + data[i].category + "</h4>");
-      $("#item-well-" + i).append("<h3>Quantity: " + data[i].quantity + "</h4>");
-      $("#item-well-" + i).append("<h3>Expiration (Days): " + data[i].expiration + "</h4>");
-      $("#item-well-" + i).append("<button class='reserve btn btn-primary' data-id='" + data[i].id + "'>Reserve</button>");
+      $("#item-table-" + i).append("<td><h4>" + (i + 1) + ". " + "</h4></td>")
+      $("#item-table-" + i).append("<td><h4>" + data[i].name + "</h4></td>");
+      $("#item-table-" + i).append("<td><h4>" + data[i].category + "</h4></td>");
+      $("#item-table-" + i).append("<td><h4>" + data[i].quantity + "</h4></td>");
+      $("#item-table-" + i).append("<td><h4>" + data[i].expiration + "</h4></td>");
+      $("#item-table-" + i).append("<td><button class='reserve btn btn-primary' data-id='" + data[i].id + "'>Reserve</button></td>");
     }
 
       function renderItem(data) {
@@ -26,8 +27,8 @@ $.get("/api/all", function(data) {
               console.log(deldata);
               console.log("Deleted Successfully!");
             });
-          $(this).closest("div").remove();   
+          $(this).closest("tr").remove();   
         });    
-      }
+      } 
       renderItem();
 });
