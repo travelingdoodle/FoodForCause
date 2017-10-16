@@ -19,31 +19,6 @@ module.exports = function(app) {
     }
   });
 
-  app.get("/api/category/:category", function(req, res) {
-    if (req.params.category) {
-      Item.findAll({
-        where: {
-          category: req.params.category
-        }
-      }).then(function(results) {
-        res.json(results);
-      });
-    }
-  });
-
-  // Need this?? 
-  app.get("/api/expiration/:expiration", function(req, res) {
-    if (req.params.expiration) {
-      Item.findAll({
-        where: {
-          expiration: req.params.expiration
-        }
-      }).then(function(results) {
-        res.json(results);
-      });
-    }
-  });
-
   app.post("/api/new", function(req, res) {
     console.log("Item:");
     console.log(req.body);
