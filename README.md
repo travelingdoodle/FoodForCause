@@ -3,21 +3,25 @@
 
 ## __Requirements / Need to Implement__
 * Authentication
-    * Incorporate Authentication 
+    * Reestablish Authentication (Disabled for ease of Presentation)
 * Testing / Library
     * Using JEST (REG)
+* Calculate remaining time until items expire
+* Allow users to reserve a certain amount (lbs.) of an item
 ## __ISSUES WITH DESIGN__
-* add.html
-    * top of page is cut off, can't see 'food for cause' title
-* available.html
-    * The papge starts further down than 'view.html' ... maybe an extra div?
-* Currently working on applying styling to login.html (default page for now)
-
+* These issues seem to stem from the way that the info is centered on the top image.
+    * Possible solution: Make the  `FoodForCause` text at the top a permanent part of the img, or fixed position, and then have the rest of the stuff centered in the remaining space. __(Thoughts, Meg?)__
+    * add.html
+        * top of page is cut off, can't see 'food for cause' title
+    * available.html
+        * The papge starts further down than 'view.html' ... maybe an extra div?
 
 
 * __Update README__
     * Project Explanation
     * Problem / Target Consumer / Solution / How it works
+    * __I'm happy with this right now, how about you guys?__
+
 * __Final Steps__
     * Deploy on Heroku (When we have a stable build)
 
@@ -27,8 +31,6 @@
     * Send Texts for notifications about specific items
 * Tweets to notify of available items that will expire soon
 * Connect on FB/ IG
-* Things and stuff
-
 
 # DRAFT DOCUMENTATION
 
