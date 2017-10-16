@@ -11,11 +11,19 @@ module.exports = function(app) {
     });
   });
 
+<<<<<<< HEAD
   app.get("/api/:name", function(req, res) {
     if (req.params.name) {
       Item.findAll({
         where: {
           name: req.params.name
+=======
+  app.get("/api/:item", function(req, res) {
+    if (req.params.item) {
+      Item.findAll({
+        where: {
+          name: req.params.item
+>>>>>>> megsbranch
         }
       }).then(function(results) {
         res.json(results);

@@ -15,6 +15,7 @@ function renderItem(data) {
 
     $("#stats").empty();
     $("#stats").show();
+    $('statsTitle').show();
 
     for (var i = 0; i < data.length; i++) {
 
