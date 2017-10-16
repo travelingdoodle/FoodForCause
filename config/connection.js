@@ -1,6 +1,6 @@
 var Sequelize = require("sequelize");
 
-var sequelize = new Sequelize("food_db", "root", null, {
+var sequelize = new Sequelize("food_db", "root", "password", {
   host: "localhost",
   dialect: "mysql",
   pool: {
