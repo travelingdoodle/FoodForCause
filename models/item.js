@@ -19,7 +19,7 @@ var Item = sequelize.define("item", {
     defaultValue: false
   }
 }, {
-  timestamps: true
+  timestamps: false
 });
 
 Item.sync();
