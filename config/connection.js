@@ -33,15 +33,9 @@ var Sequelize = require("sequelize");
 
 // This block is from the sequelize heroku guide
 if (process.env.JAWSDB_URL) {
-  // the application is executed on Heroku ... use the postgres database
-  sequelize = new Sequelize(process.env.JAWSDB_URL); {
-    //dialect:  'mysql',
-    //protocol: 'mysql',
-    // port:     match[4],
-    // host:     match[3],
-    // logging:  true //false
-  }
-} else {
+  // the application is executed on Heroku ... use the msql database
+  sequelize = new Sequelize(process.env.JAWSDB_URL);
+  } else {
   // the application is executed on the local machine ... use mysql
   sequelize = new Sequelize('food_db', 'root', "password", {
     host: "localhost",
@@ -53,7 +47,6 @@ if (process.env.JAWSDB_URL) {
     }
   });
 }
-
 // export sequelize
 module.exports = sequelize;
 
