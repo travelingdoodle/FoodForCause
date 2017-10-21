@@ -1,9 +1,3 @@
-/*!
- * Start Bootstrap - Createive v4.0.0-beta (http://startbootstrap.com/template-overviews/creative)
- * Copyright 2013-2017 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-creative/blob/master/LICENSE)
- */
-
 body,
 html {
     width: 100%;
@@ -263,6 +257,26 @@ header.masthead .header-content .header-content-inner p {
         margin-left: auto;
     }
 }
+
+.scroll-down {
+    padding: 0;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center; }
+    .fa-fw {
+      font-size: 34px;
+      border-radius: 100%;
+      color: #F05F40; }
+    .fa-fw:focus, .fa-fw:hover {
+      color: white;
+      background: rgba(0, 0, 0, 0.2); }
+  #learn {
+      margin: 0;
+      color: white;
+      text-shadow: 1px 1px black; }
 
 .service-box {
     max-width: 400px;
