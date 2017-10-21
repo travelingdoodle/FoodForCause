@@ -1,7 +1,7 @@
 {
   "name": "foodforcause",
   "version": "1.0.0",
-  "description": "",
+  "description": "Food For Cause provides a platform to connect local community outreach programs, like food banks and kitchens, with companies that have food to donate.",
   "main": "server.js",
   "scripts": {
     "test": "jest",
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/travelingdoodle/FoodForCause.git"
   },
-  "author": "",
+  "author": "Reggie Brown, Cody Burmeister, Meg O'Roark",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/travelingdoodle/FoodForCause/issues"
