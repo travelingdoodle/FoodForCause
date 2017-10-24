@@ -36,34 +36,31 @@
                 <a class="btn btn-primary btn-xl js-scroll-trigger" href="/available">Available Items</a>
                 <!-- <a class="btn btn-primary btn-xl js-scroll-trigger" href="/reserved">Reserved Items</a> -->
             </div>
-            <div class="row">
-                <div class="col-lg-12" id="availTable">
-                    <div class="table">
-                        <table style="width:100%">
-                            <thead id="table-header">
-                                <tr>
-                                    <th> # </th>
-                                    <th>Item</th>
-                                    <th>Category</th>
-                                    <th>Quantity (Lbs.)</th>
-                                    <th>Expiration (Days)</th>
-                                    <th>Reserve</th>
-                                </tr>
-                            </thead>
-                            <tbody id="table-content">
-
-                            </tbody>
-                        </table>
+            <div class="container" id="searchForm">
+                <div class="row col-lg-12">
+                    <div class="mx-auto text-left">
+                        <h3 class="section-heading">Item Search</h3>
+                        <input type="text-center" id="item-search" class="form-control">
+                        <a class="btn btn-primary btn-xl js-scroll-trigger" style="float: right;" id="search-btn">
+                            <span class="glyphicon glyphicon-search"></span> Search</a>
+                    </div>
+                    <h4 class="section-heading text-white" id="statsTitle" hidden="true">Item Search Results</h4>
+                    <div id="stats" hidden="true">
+                        <h4 id="title"></h4>
+                        <div>
+                            <h4>
+                                <strong>Item:</strong>
+                                <span id="item"></span>
+                            </h4>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
-        </div>
     </header>
 
     <!-- Custom Script -->
-    <script src="js/available.js" type="text/javascript"></script>
+    <script src="js/search.js" type="text/javascript"></script>
 
 </body>
 </html>
